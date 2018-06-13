@@ -1,0 +1,26 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  padding: 20px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 9
+  +_media-md-down
+    justify-content: flex-end
+    padding: 20px
+  &__link
+    color: white
+    margin: 0 22px
+    transition: $defaultTransition
+    +_media-lg-up
+      &:hover
+        opacity: .5
+  &__nav
+    display: flex
+    align-items: center
+    +_media-md-down
+      display: none
+

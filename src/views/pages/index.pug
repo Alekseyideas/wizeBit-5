@@ -1,0 +1,20 @@
+extends ../layouts/base
+append config
+  - var pageTitle = 'Home page'
+
+block content
+  header.header
+    button.btn.btn--menu-icon
+    nav.header__nav
+      a(href='#').header__link GHOST DRIVE
+      a(href='#').header__link WIZEBOX
+      a(href='#').header__link MY AI
+      a(href='#').header__link WIZEDRIVE
+      a(href='#').header__link BLOCKCHAIN
+
+
+  main
+    section.animate-section
+      div.animation-bg.animation-bg--1
+      div.animation-bg.animation-bg--2
+      .scroll-down

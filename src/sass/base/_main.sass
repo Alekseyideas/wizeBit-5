@@ -1,0 +1,52 @@
+html
+  font-size: $startSize
+body
+  font-size: $defaultSize
+  font-family: $font
+  line-height: $defaultLineHeight
+  color: $defaultColor
+  margin: 0
+
+div,span,a,main,section,input,select,textarea,article,aside,button,form,header
+  box-sizing: border-box
+
+a,button,input,textarea,select
+  outline: 0
+
+a
+  text-decoration: none
+  color: $defaultColor
+  transition: $defaultTransition
+
+.btn
+  display: block
+  background: none
+  border: 0
+  color: $defaultColor
+  &--menu-icon
+    width: 20px
+    height: 20px
+    background: no-repeat center /cover
+    @include bg_img('icons','menu-button.svg')
+    +_media-md-up
+      display: none
+
+input
+  display: block
+  width: 100%
+
+
+.scroll-down
+  position: absolute
+  bottom: 0px
+  left: 50%
+  width: 24px
+  margin-left: -12px
+  height: 86px
+  background: no-repeat center top/cover
+  @include bg_img('home','scroll-down.svg')
+  cursor: pointer
+  transition: $defaultTransition
+  +_media-lg-up
+    &:hover
+      opacity: .5
