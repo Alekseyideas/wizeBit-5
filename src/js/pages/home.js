@@ -1,6 +1,13 @@
 export const pageHome = ()=>{
 
 
+  function fullHeight(){
+    document.querySelector('.animate-section').style.height = window.innerHeight + 'px';
+
+  }
+  fullHeight();
+  window.addEventListener('resize', fullHeight);
+
   $('.animation-bg--1').vide({
     'mp4': 'video/wbreveal.mp4',
     'webm': 'video/wbreveal.webm',
